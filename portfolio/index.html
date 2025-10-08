@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "XkT-bOHW4ASzGFlum",
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--navbar-->
+    <nav>
+        <div class="left">
+            <a href="/">Aleeza Javed</a>
+        </div>
+
+        <div class="right">
+            <a href="https://Linkedin.com" target="_blank" rel="noopener no-referrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>  
+            </a>
+
+            <a href="mailto:noor00112364@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>  
+            </a>
+        </div>
+    </nav>
+    <main>
+        <!--section 1-hero-->
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Aleeza 👋  </h2>
+                <p>A passionate learner exploring Web Development & Testing.  
+                   I’m learning and practicing UI Testing, with a focus on checking layouts, functionality, and user experience.  
+                    I also study HTML and CSS to better understand how websites are structured, which gives me an edge in testing.  
+                    My career goal is to begin as a tester and grow into a skilled QA professional.</p>
+
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+            <div class="headshot">
+                <img src="logo.png.png" alt="Aleeza headshot">
+            </div>
+
+        </section>
+
+        <!--section 2-skill-->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                I am currently learning HTML, CSS, and JavaScript with a strong interest in design implementation testing and web development. I enjoy translating designs into responsive, user-friendly websites. My goal is to keep improving my technical skills and contribute to professional projects in the future.
+            </div>
+            
+            <div class="cells">
+                <div class="cell">
+                    <img src="html logo.jpg" alt="html">
+                    <span>HTML</span>
+                </div>
+        
+
+                <div class="cell">
+                    <img src="css logo.jpg" alt="css">
+                    <span>CSS</span>
+                </div>
+            
+
+                <div class="cell">
+                    <img src="figma logo.jpg" alt="figma">
+                    <span>UI/UX</span>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--section 3-testimony-->
+        <section id="testimony" class="testimony-section">
+            <h2>Testimony</h2>
+            <div class="group">
+                <div class="person-details">
+                    <img src="logo.png.png">
+                    <p>Aleeza Javed</p>
+                    <p>Aspiring QA Tester</p>
+                </div>
+                <div class="text">
+                    I started learning HTML and CSS to understand how websites are built. I explored UI testing to ensure designs look perfect and user experiences are smooth. I enjoy combining creativity with precision while learning front-end development.
+                </div>
+            </div>
+        </section>
+
+        <!--section 4-contact-->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">
+                    I’m always open to new opportunities and collaborations.
+                    Whether you’d like to discuss a project or share ideas about design and testing, feel free to reach out.
+                    Let’s connect and learn together!
+                </div>
+        
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+
+                    <button type="submit" onclick="sendMail()">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
